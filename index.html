@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart Feature</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Shopping Store</h1>
+        <div class="cart-icon" id="cartIcon">
+            <span>🛒</span>
+            <span class="cart-count" id="cartCount">0</span>
+        </div>
+    </header>
+
+    <main>
+        <!-- Product Management Section -->
+        <section class="product-management">
+            <h2>Manage Products</h2>
+            <form id="productForm" class="product-form">
+                <input type="hidden" id="productId" value="">
+                <div class="form-group">
+                    <label for="productName">Product Name:</label>
+                    <input type="text" id="productName" required placeholder="Enter product name">
+                </div>
+                <div class="form-group">
+                    <label for="productPrice">Price ($):</label>
+                    <input type="number" id="productPrice" step="0.01" min="0" required placeholder="Enter price">
+                </div>
+                <div class="form-group">
+                    <label for="productEmoji">Emoji:</label>
+                    <input type="text" id="productEmoji" placeholder="Enter emoji" maxlength="2">
+                </div>
+                <button type="submit" id="saveProduct" class="btn-save">Save Product</button>
+                <button type="button" id="cancelEdit" class="btn-cancel" style="display:none;">Cancel</button>
+            </form>
+        </section>
+
+        <section class="products-section">
+            <h2>Our Products</h2>
+            <div class="products-container" id="productsContainer">
+                
+            </div>
+        </section>
+
+        <section class="cart-section">
+            <h2>Your Cart</h2>
+            <div class="cart-container" id="cartContainer">
+                <ul class="cart-items" id="cartItems">
+                    
+                </ul>
+                <div class="cart-summary">
+                    <p>Total Items: <span id="totalItems">0</span></p>
+                    <p>Total Price: $<span id="totalPrice">0.00</span></p>
+                    <button id="clearCart" class="btn-clear">Clear Cart</button>
+                    <button id="checkout" class="btn-checkout">Checkout</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
