@@ -2,6 +2,8 @@
 
 This is a complete add-to-cart implementation with full CRUD operations for both products and cart items, with separate files for HTML, CSS, and JavaScript.
 
+##Live View : [Shoping Cart](https://pr-9-add-to-cart-ruddy.vercel.app/)
+
 ## Features
 
 ### Product Management (CRUD)
@@ -23,13 +25,6 @@ This is a complete add-to-cart implementation with full CRUD operations for both
 - Checkout functionality
 - Responsive design
 - Visual notifications
-
-## File Structure
-
-- [index.html](file://c:\Users\RAMDEV\Desktop\PRATHAM\PR-9-AddToCart\index.html) - Main HTML structure
-- `styles.css` - All styling
-- [script.js](file://c:\Users\RAMDEV\Desktop\PRATHAM\PR-9-AddToCart\script.js) - JavaScript functionality
-- `README.md` - This file
 
 ## How to Use
 
