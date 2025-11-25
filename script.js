@@ -313,7 +313,6 @@ function updateCartDisplay() {
             cartItems.appendChild(cartItem);
         });
         
-        // Add event listeners for quantity buttons and remove buttons
         document.querySelectorAll('.decrease').forEach(button => {
             button.addEventListener('click', (e) => {
                 const productId = parseInt(e.target.dataset.id);
@@ -335,7 +334,6 @@ function updateCartDisplay() {
             });
         });
     }
-    
     // Update cart summary
     const totalItemsCount = getTotalItems();
     const totalPriceValue = getTotalPrice();
